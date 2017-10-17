@@ -1,0 +1,37 @@
+svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.monkey {
+    stroke: green;
+    stroke-width: 2px;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: -2000;
+
+    /* animation: monkey 2s infinite; */
+    animation-name: monkey;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    /* animation-direction: reverse; undraws */
+    animation-direction: alternate;  /* draws, then undraws */
+
+    animation-timing-function: ease-in; /* slow, then fast */
+    /* animation-timing-function: linear;  */
+}
+
+@keyframes monkey {
+    0% {
+        stroke-dashoffset: -2000;
+    } 50% {
+        stroke: red;
+    } 100% {
+        stroke-dashoffset: 0;
+        stroke: purple;
+    }
+}
