@@ -1,0 +1,47 @@
+.twitter-outline, .twitter-icon {
+    transition: 300ms all;
+    transform-origin: 50% 50%;
+}
+
+.twitter-icon-group:hover .twitter-outline {
+    transform: scale(0);
+}
+.twitter-icon-group:hover .twitter-icon {
+    transform: scale(2);
+    stroke: #4099ff;
+    opacity: 0;
+}
+
+.youtube-icon, .youtube-outline, .youtube-inner-circle {
+    transition: 300ms all;
+    transform-origin: 50% 50%;
+}
+
+.youtube-icon-group:hover .youtube-outline {
+    transform: scale(1.2);
+}
+.youtube-icon-group:hover .youtube-inner-circle {
+    fill: #f26768;
+}
+.youtube-icon-group:hover .youtube-icon {
+    stroke: #fff;
+}
+
+.facebook-detail, .facebook-outline {
+    transition: 300ms all;
+    transform-origin: 50% 50%;
+}
+
+.facebook-detail {
+    opacity: 0;
+}
+
+.facebook-icon-group:hover .facebook-outline {
+    transform: scale(1.6);
+    opacity: 0;
+}
+.facebook-icon-group:hover .facebook-detail {
+    opacity: 1;
+    transform: scale(0.8) rotate(90deg);
+}
+  

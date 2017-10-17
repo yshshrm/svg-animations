@@ -1,0 +1,13 @@
+path {
+    animation: draw 2s reverse infinite;
+    stroke-dasharray: 563;
+
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 0;
+    } to {
+        stroke-dashoffset: 563;
+    }
+}
