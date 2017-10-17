@@ -1,0 +1,42 @@
+svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+  
+.square {
+    stroke-dasharray: 650;
+    stroke-dashoffset: -650;
+    animation: draw-square 2s infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes draw-square {
+from {
+    stroke-dashoffset: -650;
+    transform: rotate(0deg);
+} to {
+    stroke-dashoffset: 0;
+    transform: rotate(360deg);
+}
+}
+
+.hexagon {
+    stroke-dasharray: 425;
+    stroke-dashoffset: -425;
+    animation: draw-hexagon 2s infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes draw-hexagon {
+from {
+    stroke-dashoffset: -425;
+    transform: rotate(0deg);
+} to {
+    stroke-dashoffset: 0;
+    transform: rotate(360deg);
+}
+}
