@@ -1,0 +1,25 @@
+body {
+    background-color: #555;
+}
+
+svg {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+}
+
+circle {
+    animation: move 3s alternate infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(480px);
+
+    }
+}
